@@ -9,6 +9,7 @@ import {NavBar} from "./components/NavBar";
 import {Welcome} from "./components/Welcome";
 import {About} from "./components/About";
 import {Gallery} from "./components/Gallery";
+import {Contact} from "./components/Contact";
 
 
 // import fontawesome icons
@@ -44,84 +45,11 @@ const App = () => (
 		{/* GALLERY SECTION */}
 		<Gallery/>
 
-		<section id="contact" class="py-10">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-8 offset-md-2">
-						<div class="border p-5">
-							<h3 class="text-center mb-5">Contact Me</h3>
-							<form id="rochelles-demo-form" action="../php/" method="post">
-								<div class="form-group">
-									<label class="sr-only" for="contactDemoName">Name <span class="text-danger">*</span></label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-										<span class="input-group-text">
-											<i class="fas fa-user" aria-hidden="true"></i>
-										</span>
-										</div>
-										<input type="text" class="form-control" id="contactDemoName" name="contactDemoName" placeholder="Name"/>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="contactDemoEmail">Email <span class="text-danger">*</span></label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-										<span class="input-group-text">
-											<i class="fas fa-envelope" aria-hidden="true"></i>
-										</span>
-										</div>
-										<input type="email" class="form-control" id="contactDemoEmail" name="contactDemoEmail" placeholder="Email"/>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="contactDemoSubject">Subject</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-										<span class="input-group-text">
-											<i class="fa fa-pencil" aria-hidden="true"></i>
-										</span>
-										</div>
-										<input type="text" class="form-control" id="contactDemoSubject" name="contactDemoSubject" placeholder="Subject"/>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="sr-only" for="contactDemoMessage">Message <span class="text-danger">*</span></label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-										<span class="input-group-text">
-											<i class="fas fa-comment" aria-hidden="true"></i>
-										</span>
-										</div>
-										<textarea class="form-control" rows="5" id="contactDemoMessage" name="contactDemoMessage" placeholder="I <3 CopyPasta :D~ (2000 characters max)"></textarea>
-									</div>
-								</div>
+		{/* CONTACT SECTION */}
+		<Contact/>
 
-								<div class="g-recaptcha" data-sitekey="--YOUR RECAPTCHA SITE KEY--"></div>
-								<button class="btn btn-warning" type="submit"><i class="fas fa-paper-plane"></i> Send</button>
-								<button class="btn btn-secondary" type="reset"><i class="fas fa-ban"></i> Reset</button>
-							</form>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="col-xs-12">
-						<div id="output-area"></div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<footer class="py-5">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col text-center">
-						<h4>Custom Styles Example</h4>
-						<a class="lead text-body" href="https://github.com/rlewis2892/bootstrap-4-sandbox/tree/cohort-29-css" target="_blank">View this project on GitHub</a>
-					</div>
-				</div>
-			</div>
-		</footer>
+		{/* FOOTER */}
+		<Footer/>
 	</>
 );
 
