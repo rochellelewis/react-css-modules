@@ -4,13 +4,11 @@ import ReactDOM from 'react-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import './style.css';
 
-// import local images
-import gkephart from './img/gkephart.jpg';
-
 // import components
 import {NavBar} from "./components/NavBar";
 import {Welcome} from "./components/Welcome";
 import {About} from "./components/About";
+import {Gallery} from "./components/Gallery";
 
 
 // import fontawesome icons
@@ -43,55 +41,8 @@ const App = () => (
 		{/* ABOUT SECTION */}
 		<About/>
 
-		<section id="gallery" class="py-10">
-			<div class="container">
-				<div class="row">
-					<div class="col text-center mb-4">
-						<h3 class="mb-4">Design Assets</h3>
-						<p class="lead">The following assets were used in the design of this page.</p>
-					</div>
-				</div>
-
-				<div class="row pt-5">
-					<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-lg-3 mb-2">
-						<div class="card h-100">
-							<img src={gkephart} class="card-img-top" alt="george kephart"/>
-								<div class="card-body">
-									<h5 class="card-title">Google Fonts</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-								</div>
-						</div>
-					</div>
-					<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-lg-3 mb-2">
-						<div class="card h-100">
-							<img src={gkephart} class="card-img-top" alt="george kephart"/>
-								<div class="card-body">
-									<h5 class="card-title">Fontawesome.io</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-								</div>
-						</div>
-					</div>
-					<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-lg-3 mb-2">
-						<div class="card h-100">
-							<img src={gkephart} class="card-img-top" alt="george kephart"/>
-								<div class="card-body">
-									<h5 class="card-title">Unsplash.com</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-								</div>
-						</div>
-					</div>
-					<div class="col-8 offset-2 offset-sm-0 col-sm-6 col-lg-3 mb-2">
-						<div class="card h-100">
-							<img src={gkephart} class="card-img-top" alt="george kephart"/>
-								<div class="card-body">
-									<h5 class="card-title">Bootstrap</h5>
-									<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-								</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		{/* GALLERY SECTION */}
+		<Gallery/>
 
 		<section id="contact" class="py-10">
 			<div class="container">
