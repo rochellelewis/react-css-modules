@@ -15,21 +15,9 @@ import {Footer} from "./components/Footer";
 // import fontawesome icons
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {far} from "@fortawesome/free-regular-svg-icons";
-import {fab, faGithub} from "@fortawesome/free-brands-svg-icons";
-import {
-	fas,
-	faCat,
-	faEllipsisH,
-	faEnvelope,
-	faHeart,
-	faKey,
-	faPencilAlt,
-	faSignInAlt,
-	faSignOutAlt,
-	faTrash,
-	faUser
-} from "@fortawesome/free-solid-svg-icons";
-library.add(fab, far, fas, faCat, faEllipsisH, faEnvelope, faHeart, faGithub, faKey, faPencilAlt, faSignInAlt, faSignOutAlt, faTrash, faUser);
+import {fab} from "@fortawesome/free-brands-svg-icons";
+import {fas} from "@fortawesome/free-solid-svg-icons";
+library.add(fab, far, fas);
 
 const App = () => (
 	<>
