@@ -1,0 +1,239 @@
+/****************************
+* Custom CSS
+* author: Rochelle Lewis rlewis37@cnm.edu
+*****************************/
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Press+Start+2P&family=Roboto:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+/****************************
+* CUSTOM UTILS
+*****************************/
+.py-10 {
+	padding-top: 10rem;
+	padding-bottom: 10rem;
+}
+
+/****************************
+* BOOTSTRAP CUSTOM OVERRIDES
+*****************************/
+h3, .h3 {
+	font-size: 2.5rem;
+}
+
+.lead {
+	font-size: initial;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1.75rem;
+}
+
+.card, .card-img-top {
+	border-radius: 0;
+	border: none;
+}
+
+.card-title {
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+button.btn {
+	border-radius: 0;
+}
+
+.form-control,
+.input-group-text {
+	background-color: transparent;
+	border: 1px solid #333;
+	border-radius: 0;
+}
+
+/****************************
+* GLOBAL STYLES
+*****************************/
+body {
+	background: url(img/bg-image.jpg) no-repeat center right fixed;
+	background-size: cover;
+	font-family: 'Roboto', sans-serif;
+	/* required for bootstrap scrollspy */
+	position: relative;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	-webkit-transition: all 250ms ease;
+	-moz-transition: all 250ms ease;
+	-ms-transition: all 250ms ease;
+	-o-transition: all 250ms ease;
+	transition: all 250ms ease;
+}
+
+/****************************
+* NAVBAR
+*****************************/
+nav.navbar {
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.navbar-dark {
+	background-color: #000;
+}
+
+.navbar-inverse {
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: yellow;
+}
+
+@media only screen and (min-width: 768px) {
+	.navbar-expand .navbar-nav .nav-link {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+/****************************
+* WELCOME
+*****************************/
+section#welcome {
+	min-height: 100vh;
+}
+
+section#welcome .jumbotron {
+	background-color: rgba(0,0,0,0.65);
+	border-radius: 0;
+}
+
+section#welcome .jumbotron h1 {
+	border: 10px solid;
+	color: yellow;
+	display: inline-block;
+	font-weight: 900;
+	padding: 2rem;
+	text-shadow: 0.075em 0.075em 0 orchid;
+	text-transform: uppercase;
+}
+
+section#welcome .jumbotron p.lead {
+	color: yellow;
+}
+
+@media only screen and (min-width: 768px) {
+	section#welcome .jumbotron h1 {
+		font-size: 4rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	section#welcome .jumbotron h1 {
+		font-size: 6rem;
+	}
+}
+
+/****************************
+* ABOUT
+*****************************/
+section#about {
+	background-color: rgba(0,0,0,0.75);
+}
+
+section#about h3 {
+	font-family: 'Bungee Shade', 'Times New Roman', serif;
+}
+
+@media only screen and (min-width: 768px) {
+	section#about h3 {
+		font-size: 3.5rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	section#about h3 {
+		font-size: 4rem;
+	}
+}
+
+/****************************
+* GALLERY
+*****************************/
+section#gallery {
+	background-color: orchid;
+}
+
+section#gallery h3 {
+	font-family: 'Bungee Shade', 'Times New Roman', serif;
+	text-shadow: -0.05em 0.05em 0 yellow;
+}
+
+@media only screen and (min-width: 768px) {
+	section#gallery h3 {
+		font-size: 3.5rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	section#gallery h3 {
+		font-size: 4rem;
+	}
+}
+
+/****************************
+* CONTACT
+*****************************/
+section#contact {
+	background-color: rgba(255,255,255,0.85);
+}
+
+section#contact .border {
+	border: 10px solid orchid !important;
+}
+
+section#contact h3 {
+	font-family: 'Bungee Shade', 'Times New Roman', serif;
+}
+
+@media only screen and (min-width: 768px) {
+	section#contact h3 {
+		font-size: 3rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	section#contact h3 {
+		font-size: 4rem;
+	}
+}
+
+/****************************
+* FOOTER
+*****************************/
+footer {
+	background-color: yellow;
+}
+
+footer h4 {
+	font-family: 'Press Start 2P', 'Times New Roman', serif;
+	text-transform: uppercase;
+	font-weight: 900;
+	text-shadow: 2px 2px 0 #fff;
+}
+
+footer hr {
+	border-top: 1px solid rgba(0,0,0,0.5) !important;
+}
