@@ -7,6 +7,9 @@ import './style.css';
 // import local images
 import gkephart from './img/gkephart.jpg';
 
+// import components
+import {NavBar} from "./components/NavBar";
+
 // import fontawesome icons
 import {library} from "@fortawesome/fontawesome-svg-core";
 import {far} from "@fortawesome/free-regular-svg-icons";
@@ -28,56 +31,8 @@ library.add(fab, far, fas, faCat, faEllipsisH, faEnvelope, faHeart, faGithub, fa
 
 const App = () => (
 	<>
-		<header>
-			<div class="container-fluid">
-				<nav id="main-nav" class="navbar navbar-expand fixed-top">
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mx-auto">
-							<li class="nav-item">
-								<a class="nav-link" href="https://bootcamp-coders.cnm.edu/~rlewis37/bootstrap-4-sandbox/index.php#home">
-									<i class="fas fa-home fa-lg"></i>
-									<span class="sr-only">home</span>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#about">
-									<i class="fas fa-user fa-lg"></i>
-									<span class="sr-only">about me</span>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#gallery">
-									<i class="fas fa-palette fa-lg"></i>
-									<span class="sr-only">design assets</span>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">
-									<i class="fas fa-envelope fa-lg"></i>
-									<span class="sr-only">contact me</span>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="mockup.php">
-									<i class="fas fa-desktop fa-lg"></i>
-									<span class="sr-only">mockup</span>
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="https://github.com/rlewis2892/bootstrap-4-sandbox/tree/cohort-29-css" target="_blank">
-									<i class="fa fa-github fa-lg"></i>
-									<span class="sr-only">github</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</nav>
-			</div>
-		</header>
+		{/* NAVBAR */}
+		<NavBar/>
 
 		<section id="welcome" class="d-flex align-items-center">
 			<div class="container d-flex justify-content-center">
