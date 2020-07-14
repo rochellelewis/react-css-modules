@@ -10,6 +10,8 @@ import gkephart from './img/gkephart.jpg';
 // import components
 import {NavBar} from "./components/NavBar";
 import {Welcome} from "./components/Welcome";
+import {About} from "./components/About";
+
 
 // import fontawesome icons
 import {library} from "@fortawesome/fontawesome-svg-core";
@@ -38,21 +40,8 @@ const App = () => (
 		{/* WELCOME / HERO SECTION */}
 		<Welcome/>
 
-		<section id="about" class="py-10 text-light">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-4 mb-3">
-						<div class="h-100 p-4 border text-center text-md-left">
-							<h3 class="mb-0">About Me</h3>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-8">
-						<p class="lead text-justify">Find something else more interesting eat half my food and ask for more. No, you can't close the door, i haven't decided whether or not i wanna go out pose purrfectly to show my beauty. Mark territory dont wait for the storm to pass, dance in the rain and skid on floor.</p>
-						<p class="lead text-justify">Crash into wall scratch the postman wake up lick paw wake up owner meow meow meow loudly just to annoy owners i cry and cry and cry unless you pet me, and then maybe i cry just for fun.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+		{/* ABOUT SECTION */}
+		<About/>
 
 		<section id="gallery" class="py-10">
 			<div class="container">
