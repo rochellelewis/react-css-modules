@@ -9,6 +9,7 @@ import gkephart from './img/gkephart.jpg';
 
 // import components
 import {NavBar} from "./components/NavBar";
+import {Welcome} from "./components/Welcome";
 
 // import fontawesome icons
 import {library} from "@fortawesome/fontawesome-svg-core";
@@ -34,14 +35,8 @@ const App = () => (
 		{/* NAVBAR */}
 		<NavBar/>
 
-		<section id="welcome" class="d-flex align-items-center">
-			<div class="container d-flex justify-content-center">
-				<div class="jumbotron text-right my-5">
-					<h1>Hello Custom Bootstrap!</h1>
-					<p class="lead mb-0">A George Kephart Compatible PWP example.</p>
-				</div>
-			</div>
-		</section>
+		{/* WELCOME / HERO SECTION */}
+		<Welcome/>
 
 		<section id="about" class="py-10 text-light">
 			<div class="container">
