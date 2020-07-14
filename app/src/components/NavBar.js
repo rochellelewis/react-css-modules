@@ -53,7 +53,7 @@ export const NavBar = () => {
 								</li>
 								<li className="nav-item">
 									<a className="nav-link"
-										href="https://github.com/rlewis2892/bootstrap-4-sandbox/tree/cohort-29-css"
+										href="https://github.com/rlewis2892/react-css-modules"
 										target="_blank">
 										<FontAwesomeIcon icon={['fab', 'github']} size='lg'/>
 										<span className="sr-only">github</span>

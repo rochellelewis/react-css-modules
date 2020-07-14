@@ -10,7 +10,7 @@ import {Welcome} from "./components/Welcome";
 import {About} from "./components/About";
 import {Gallery} from "./components/Gallery";
 import {Contact} from "./components/Contact";
-
+import {Footer} from "./components/Footer";
 
 // import fontawesome icons
 import {library} from "@fortawesome/fontawesome-svg-core";
